@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/variables.css" />
+    <link rel="stylesheet" href="/CSS/generic-elements.css" />
+    <link rel="stylesheet" href="/CSS/typography.css" />
+    <link rel="stylesheet" href="/CSS/utilities.css" />
+    <link rel="stylesheet" href="/CSS/card.css" />
+    <link rel="stylesheet" href="/CSS/header.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Brewed Store</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar --horizontal-flex --centered-flex">
+        <div class="navbar__logo">
+          <button class="btn --icon-btn" onclick="window.open('./index.html', 'break')"><img class="logo" src="./Assests/logo.png" alt="logo"></button>
+        </div>
+        <input type="text" class="input navbar__search" placeholder="Search" />
+        <div class="icon-btn-container --horizontal-flex --centered-flex">
+          <button class="btn --icon-btn" onclick="window.open('./Pages/Wishlist/index.html', 'break')">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#fff"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+              />
+            </svg>
+          </button>
+          <button class="btn --icon-btn" onclick="window.open('./Pages/Cart/index.html', 'break')">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#fff"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="btn-container --horizontal-flex --centered-flex">
+          <button class="btn --primary-btn --has-hover-overlay" onclick="window.open('./Pages/Login/index.html', 'break')">Log In</button>
+          <button class="btn --secondary-btn" onclick="window.open('./Pages/Signup/index.html', 'break')">Sign Up</button>
+        </div>
+      </nav>
+      <ul class="navbar--category --horizontal-flex --bold-500">
+        <li class="navlinks--category">Men <button class="btn --icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+        </button></li>
+        <li class="navlinks--category">Women <button class="btn --icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+        </button></li>
+        <li class="navlinks--category">Kids <button class="btn --icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+        </button></li>
+        <li class="navlinks--category">Gadgets <button class="btn --icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+        </button></li>
+        <li class="navlinks--category">Others <button class="btn --icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
+        </button></li>
+      </ul>
+    </header>
+    <main class="main --verticle-flex">
+      <section class="section --features-of-the-day">
+        <img src="./Assests/feature-of-the-day-bg.jpg" alt="coffee-pic">
+        <div class="feature-of-the-day-overlay --verticle-flex">
+          <h2 class="sub-heading --h2">Up to 40% off on instant coffee brands.</h2>
+          <button class="btn --primary-btn --has-hover-overlay">Show now</button>
+        </div>
+      </div>
+      </section>
+      <section class="section --deals-of-the-day">
+        <h2 class="sub-heading section-heading --h2">Deals Of The Day</h2>
+        <div class="deals-of-the-day-container --has-gap">
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+          <div class="card--deal-of-the-day --has-hover-overlay">
+            <img src="./Assests/batman-pic.jpg" alt="">
+            <div class="discount-overlay">50% Off</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section --suggestions-for-you">
+        <h2 class="sub-heading section-heading --h2">Suggestions For You</h2>
+        <div class="suggestions-container --horizontal-flex --has-gap">
+          <div class="suggestions-card --has-gap">
+            <div class="card-thumbnail-container">
+              <img src="./Assests/men-jacket.jpg" alt=""></div>
+            <div class="card-text-container">
+              <h3 class="sub-heading --h3">New Arrival</h3>
+              <p class="card-text">Checkout our new winter collection</p>
+              <button class="btn --secondary-btn">For Men</button>
+            </div>
+          </div>
+          <div class="suggestions-card">
+            <div class="card-thumbnail-container">
+              <img src="./Assests/women-jacket.jpg" alt=""></div>
+            <div class="card-text-container">
+              <h3 class="sub-heading --h3">New Arrival</h3>
+              <p class="card-text">Checkout our new winter collection</p>
+              <button class="btn --secondary-btn">For Women</button>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <button class="btn show-all-products-btn --primary-btn --has-hover-overlay" onclick="window.open('./Pages/ProductListing/index.html', 'break')">Show all products</button>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&display=swap");
+
+/* MAIN */
+
+.main {
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.show-all-products-btn {
+  padding: 1rem;
+}
+
+/* MAIN_SECTION */
+
+.section-heading {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* MAIN_FEATURES-OF-THE-DAY */
+
+.section.--features-of-the-day {
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.section.--features-of-the-day img {
+  height: 100%;
+  width: 100%;
+}
+
+.feature-of-the-day-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--BLACK-OVERLAY-CLR);
+  padding: 5rem;
+  color: var(--PRIMARY-BACKGROUND-CLR);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feature-of-the-day-overlay .sub-heading {
+  width: 50%;
+}
+
+/* MAIN_DEALS-OF-THE-DAY */
+
+.deals-of-the-day-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card--deal-of-the-day {
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.card--deal-of-the-day img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card--deal-of-the-day::after {
+  position: absolute;
+  background: #000000a1;
+}
+
+.discount-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--SECONDARY-FONT-CLR);
+  z-index: 1;
+}
+
+/* MAIN_SUGGESTIONS-FOR-YOU */
+
+.suggestions-container {
+  flex-wrap: wrap;
+}
+
+.suggestions-card {
+  aspect-ratio: 2.7;
+  background: var(--SUGGESTION-CARD-BACKGROUND-CLR);
+  color: var(--SECONDARY-FONT-CLR);
+  display: flex;
+  flex-grow: 1;
+  height: var(--SUGGESTION-CARD-HEIGHT);
+  width: min(100%, var(--SUGGESTION-CARD-MIN-WIDTH));
+  max-width: var(--SUGGESTION-CARD-MAX-WIDTH);
+}
+
+.card-text-container {
+  flex-grow: 1;
+  padding: 3rem;
+}
+
+.suggestions-card .sub-heading {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid;
+}
+
+.suggestions-card .card-thumbnail-container {
+  flex-basis: 30%;
+}
+
+.card-text {
+  padding: 1rem 0;
+}
