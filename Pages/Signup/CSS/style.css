@@ -1,7 +1,7 @@
 /* lOGIN-SIGNUP-OUTER-CONTAINER */
 
 .login-signup-outer-container {
-  box-shadow: 5px 5px 5px 0 #00000070;
+  box-shadow: 5px 5px 5px 0 var(--LOGIN-SIGNUP-OUTER-BOX-SHADOW-CLR);
 }
 
 /* SIGNUP-BOX */
@@ -39,7 +39,7 @@
 
 .--input-animation .label {
   background: var(--SECONDARY-BACKGROUND-CLR);
-  color: rgb(158, 158, 158);
+  color: var(--LABEL-CLR-INPUT-ANIMATION);
   padding: 0 0.3rem;
   position: absolute;
   left: 1.3rem;
