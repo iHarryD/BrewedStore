@@ -1,0 +1,101 @@
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-card {
+  background: var(--SECONDARY-BACKGROUND-CLR);
+  color: var(--SECONDARY-FONT-CLR);
+  min-width: var(--PRODUCT-CARD-MIN-WIDTH);
+  max-width: var(--PRODUCT-CARD-MAX-WIDTH);
+  height: var(--PRODUCT-CARD-HEIGHT);
+}
+
+.card-text-container {
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.card-button-container > .btn {
+  flex-basis: 100%;
+}
+
+.card-button-container > .btn.--primary-btn {
+  padding: var(--CARD-BTN-PADDING-Y) var(--CARD-BTN-PADDING-X);
+}
+
+.card-button-container > .btn.--secondary-btn {
+  padding: calc(var(--CARD-BTN-PADDING-Y) - var(--INPUT-BTN-BORDER-WIDTH))
+    calc(var(--CARD-BTN-PADDING-X) - var(--INPUT-BTN-BORDER-WIDTH));
+}
+
+.mrp__card {
+  text-decoration: line-through;
+}
+
+.card-thumbnail-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-thumbnail-container {
+  flex-basis: 50%;
+}
+
+.thumbnail-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-end;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.product-card.--out-of-stock {
+  position: relative;
+}
+
+.product-card.--out-of-stock::after {
+  content: "Out of stock";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--CARD-OVERLAY-CLR);
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-card.--cart-card {
+  max-width: var(--CART-PRODUCT-CARD-MAX-WIDTH);
+  min-width: var(--CART-PRODUCT-CARD-MIN-WIDTH);
+  height: var(--CART-PRODUCT-CARD-HEIGHT);
+  position: relative;
+}
+
+.product-card.--cart-card .card-thumbnail-container {
+  flex-basis: 30%;
+}
+
+.card-text-container {
+  flex-grow: 1;
+}
+
+.product-card.--cart-card .card-button-container {
+  margin-top: auto;
+}
+
+.btn.delete-from-cart-btn {
+  position: absolute;
+  right: 1rem;
+  background: transparent;
+  padding: 0;
+  top: 1rem;
+}
