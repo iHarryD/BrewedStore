@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--PRIMARY-BACKGROUND-CLR);
+  color: var(--PRIMARY-FONT-CLR);
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+button,
+a,
+input {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.btn {
+  border-radius: var(--BORDER-INPUT-BORDER-RADIUS);
+  cursor: pointer;
+  padding: var(--BTN-INPUT-PADDING-Y) var(--BTN-INPUT-PADDING-X);
+}
+
+.input {
+  border: 1px solid var(--BTN-INPUT-BORDER-CLR);
+  border-radius: var(--BTN-INPUT-BORDER-RADIUS);
+  padding: calc(var(--BTN-INPUT-PADDING-Y) - var(--INPUT-BTN-BORDER-WIDTH))
+    calc(var(--BTN-INPUT-PADDING-X) - var(--INPUT-BTN-BORDER-WIDTH));
+}
+
+.btn.--primary-btn {
+  background: var(--ACCENT-CLR);
+  color: var(--SECONDARY-FONT-CLR);
+}
+
+.btn.--secondary-btn {
+  border: 1px solid var(--BTN-INPUT-BORDER-CLR);
+  padding: calc(var(--BTN-INPUT-PADDING-Y) - var(--INPUT-BTN-BORDER-WIDTH))
+    calc(var(--BTN-INPUT-PADDING-X) - var(--INPUT-BTN-BORDER-WIDTH));
+}
+
+.btn.--secondary-btn:hover {
+  background: var(--SECONDARY-BTN-HOVER-CLR);
+}
+
+.btn.--text-btn {
+  padding: 0;
+}
+
+.btn.--icon-btn {
+  animation: none;
+  background: var(--ICON-BTN-BACKGROUND-CLR);
+  padding: var(--ICON-BTN-PADDING);
+  border-radius: 50%;
+}
+
+.btn.--text-btn {
+  font-size: 0.8rem;
+}
+
+.btn.--text-btn:hover {
+  text-decoration: underline;
+}
+
+.btn svg {
+  display: block;
+}

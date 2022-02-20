@@ -1,0 +1,23 @@
+.heading {
+  font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
+}
+
+.sub-heading.--h2 {
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+
+.sub-heading.--h3 {
+  font-size: clamp(1rem, 0.5rem + 1vw, 1.5rem);
+}
+
+.--small-text {
+  font-size: 0.8rem;
+}
+
+.--bold-700 {
+  font-weight: 700;
+}
+
+.--bold-500 {
+  font-weight: 500;
+}
