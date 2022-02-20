@@ -1,0 +1,54 @@
+/* lOGIN-SIGNUP-OUTER-CONTAINER */
+
+.login-signup-outer-container {
+  box-shadow: 5px 5px 5px 0 #00000070;
+}
+
+/* LOGIN-BOX-CONTAINER */
+
+.login-box-container {
+  background: var(--SECONDARY-BACKGROUND-CLR);
+  color: var(--SECONDARY-FONT-CLR);
+}
+
+/* LOGIN-BOX-CONTAINER_SECTIONS */
+
+.login-box-container .section {
+  padding: 3rem;
+}
+
+/* LOGIN-BOX_UTILITIES */
+
+.login-utilities-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+/* BUTTONS & INPUTS */
+
+.login-box-container .section .btn,
+.login-box-container .section .input {
+  width: 100%;
+}
+
+.login-utilities-container .btn:nth-child(1) {
+  text-align: start;
+}
+
+.login-utilities-container .btn:nth-child(2) {
+  text-align: end;
+}
+
+.btn.--with-facebook {
+  background: #4267b2;
+}
+
+.btn.--with-google {
+  background: #f1f1f1;
+  color: #000;
+}
+
+.btn.--with-apple {
+  background: rgb(63, 63, 63);
+}
