@@ -1,0 +1,56 @@
+/* MAIN */
+
+.heading--cart {
+  border-bottom: 2px solid;
+  margin: 1rem;
+}
+
+/* MAIN_CHECKOUT-SECTION */
+
+.section.--checkout {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+/* CHECKOUT-SECTION_CART-ITEMS-CONTAINER */
+
+.cart-items-container {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+/* CHECKOUT-SECTION_ASIDE-CHECKOUT-TOTAL */
+
+.aside--checkout-total {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.price-breakdown-items {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-breakdown-items span {
+  font-weight: 700;
+}
+
+.add-address-btn {
+  margin-top: auto;
+}
+
+/* MAIN_ASIDE-OFFERS */
+
+.aside--offers {
+  flex-basis: 200px;
+  padding: 1rem;
+  border-left: 2px solid;
+}
+
+.offers-list {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
