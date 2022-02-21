@@ -1,0 +1,46 @@
+/* MAIN_PRODUCT-LISTING-SECTION */
+
+.section.--product-listing {
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--PRODUCT-CARD-MIN-WIDTH), 1fr)
+  );
+  padding: 1rem;
+  position: relative;
+}
+
+/* MAIN_ASIDE-FILTER-MENU */
+
+.aside--filter-menu {
+  padding: 1rem;
+  flex-basis: 200px;
+}
+
+/* FILTER-MENU */
+
+.price-range-input-container .input {
+  width: 100%;
+}
+
+.sort-input-container,
+.color-filter-option-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* PRODUCT-LISTING-SECTION_PAGE-NAVBAR */
+
+.page-navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6rem;
+  padding: 1rem;
+}
+
+.page-navbar .btn {
+  background: transparent;
+}
