@@ -26,6 +26,10 @@
   position: relative;
 }
 
+.section.--features-of-the-day .btn {
+  margin-top: 1rem;
+}
+
 .section.--features-of-the-day img {
   height: 100%;
   width: 100%;
@@ -101,7 +105,7 @@
 
 .card-text-container {
   flex-grow: 1;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .suggestions-card .sub-heading {
