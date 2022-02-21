@@ -116,3 +116,9 @@
 .card-text {
   padding: 1rem 0;
 }
+
+.card-thumbnail-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
